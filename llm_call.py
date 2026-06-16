@@ -5,7 +5,7 @@ from s3_management import build_final_prompt
 from extractor import extract_document
 from bank import process_bank_question
 
-MODEL = "gemma3:latest"
+MODEL = "mistral:7b"
 
 
 def ask_model(prompt, document_text):
