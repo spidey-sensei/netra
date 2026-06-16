@@ -2,7 +2,7 @@ from extractor import extract_pdf_text
 from s3_management import load_latest_prompt
 import ollama
 
-MODEL = "gemma3:latest"
+MODEL = "mistral:7b"
 
 def get_relevant_text(pages, question):
     print(f"\n[Step 4] Selecting relevant chunk for question: '{question}'")
