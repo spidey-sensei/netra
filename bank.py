@@ -108,7 +108,7 @@ def process_bank_question(
     pages = extract_pdf_text(pdf_path)
 
     # Step 2: Load prompt from S3
-    prompt = load_latest_prompt(bank_name)
+    prompt = load_latest_prompt(f"bank/{bank_name}")
 
     # Step 3: Retrieve relevant chunk
     relevant_text = get_relevant_text(
