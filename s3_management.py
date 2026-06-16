@@ -203,7 +203,7 @@ def build_final_prompt(
     if document_type == "bank":
 
         s3_prompt = load_latest_prompt(
-            f"bank/{bank_name}.txt"
+            f"bank/{bank_name}"
         )
 
     else:
